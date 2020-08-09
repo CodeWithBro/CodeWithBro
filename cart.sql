@@ -1,0 +1,1 @@
+CREATE TABLE `product`.`product` ( `product_id` INT NOT NULL AUTO_INCREMENT , `product_name` VARCHAR(255) NOT NULL , `product_description` VARCHAR(255) NOT NULL , `date_added` VARCHAR(255) NOT NULL , `thumbnail` VARCHAR(255) NOT NULL , `price` VARCHAR(255) NOT NULL , PRIMARY KEY (`product_id`)) ENGINE = InnoDB;

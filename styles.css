@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: pop;
+    src: url("../Poppins/Poppins-Light.ttf");
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(246, 245, 245);
+    font-family: pop;
+}
+
+/* wrapper */
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.wrap h2 {
+    color: #7e57c2;
+    font-size: 30px;
+}
+header {
+    background: #7e57c2 ;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(15, 15, 15, 0.349);
+}
+header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .wrap h2 {
+    color: white;
+}
+header a {
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    margin-left: 9px;
+    display: inline-block;
+}
+nav  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.cart_tracker {
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+/* styling products */
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.productList form {
+    width: 250px;
+    background: white;
+    box-shadow: 0px 3px 10px rgba(15, 15, 15, 0.349);
+    padding: 12px;
+    margin: 10px 20px;
+}
+.productList form img {
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    max-height: 150px;
+}
+.qty , .price-tag{
+    padding: 9px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.qty input, .qty button {
+    border: 0;
+    padding: 8px;
+}
+.qty input {
+    -webkit-appearance: textfield;
+    border: 1px solid #7e57c2;
+}
+.qty button {
+    background: #7e57c2;
+    color: white;
+}
+.price-tag {
+    justify-content: space-between;
+    font-size: 20px;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.buy{
+ padding: 10px 20px;
+ border: 0;
+ background: #7e57c2;
+ color: white;
+ box-shadow: 0px 3px 6px rgba(15, 15, 15, 0.349);
+ cursor: pointer;
+ font-size: 18px;
+}
+.btn-remove {
+    padding: 10px 8px;
+    color: white;
+    background: #ff6440;
+    box-shadow: 0px 3px 6px rgba(15, 15, 15, 0.349);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* admin */
+.addproduct {
+    background: white;
+    margin-top: 20px;
+    padding: 12px;
+    box-shadow: 1px 4px 10px rgba(8, 8, 8, 0.486);
+    margin-bottom: 20px;
+}
+
+.addproduct form .form-control {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-control input, .form-control textarea {
+    display: block;
+    padding: 9px 14px;
+    border: 1px solid #7e57c2;
+    border-radius: 3px;
+}
+.form-control input {
+    width: 200px;
+}
+.addNew {
+    background: #7e57c2;
+    border-radius: 4px;
+    padding: 12px;
+    color: white;
+    border:0;
+    min-width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.message {
+    padding: 12px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.349);
+    margin-bottom: 5px;
+}
+.message.success {
+    background: #81c784;
+    color: rgb(8, 8, 8);
+}
+.message.error {
+    background: #ff6440;
+    color: white;
+}
+.message-front {
+    margin-top: 20px;
+    padding: 12px;
+}
+.check-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkout {
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.527);
+    margin: 10px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+.checkout img {
+    margin-bottom: 12px;
+}
+.delete {
+    position: absolute;
+    top: -20px;
+    background: #7e57c2;
+    padding: 10px;
+    border-radius: 100%;
+    right: -15px;
+    border: 1px solid black;
+    color: white;
+}
+.payment {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-checkout a {
+    padding: 9px;
+    text-decoration: none;
+    background: #7e57c2;
+    border: 1px solid black;
+    color: white;
+    border-radius: 4px;
+}
+.price {
+    font-size: 160%;
+}
